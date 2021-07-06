@@ -1,9 +1,9 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
 export const List = styled.ul`
     padding: 10px;
     margin: 2px 0;
-    background-color: ${({theme})=>theme.color.white};
+    background-color: ${({ theme }) => theme.color.white};
     max-width: auto;
 `;
 
@@ -12,7 +12,7 @@ export const Item = styled.li`
     grid-template-columns: 35px 1fr 35px;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid ${({theme})=>theme.color.silver};
+    border-bottom: 1px solid ${({ theme }) => theme.color.silver};
     margin-bottom: 10px;
     padding: 10px 10px 10px 10px;
 
@@ -42,7 +42,7 @@ export const Button = styled.button`
     display: flex;
     justify-content: center;
 
-    ${({toggleDone}) => toggleDone && css`
+    ${({ toggleDone }) => toggleDone && css`
         transition: 1s;
         background-color: green;
         grid-column: 1;
@@ -54,7 +54,7 @@ export const Button = styled.button`
         }
     `}    
 
-    ${({remove}) => remove && css`
+    ${({ remove }) => remove && css`
         transition: 1s;
         background-color: red;
         grid-column: 3;

@@ -1,4 +1,4 @@
-import {StyledMain} from "./styled.js";
+import { StyledMain } from "./styled.js";
 
 const Container = (props) => (
     <StyledMain >
