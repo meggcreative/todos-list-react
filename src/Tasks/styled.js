@@ -3,7 +3,7 @@ import styled, {css} from "styled-components";
 export const List = styled.ul`
     padding: 10px;
     margin: 2px 0;
-    background-color: #fff;
+    background-color: ${({theme})=>theme.color.white};
     max-width: auto;
 `;
 
@@ -12,7 +12,7 @@ export const Item = styled.li`
     grid-template-columns: 35px 1fr 35px;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid ${({theme})=>theme.color.silver};
     margin-bottom: 10px;
     padding: 10px 10px 10px 10px;
 
