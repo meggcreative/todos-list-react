@@ -14,7 +14,7 @@ function Tasks() {
             <Header title="Lista zadań" />
             <Section
                 title="Dodaj nowe zadanie"
-                extraHeaderContent={<Button/>}
+                extraHeaderContent={<Button />}
                 body={<Form/>}
             />
             < Section
